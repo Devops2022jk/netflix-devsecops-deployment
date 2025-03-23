@@ -15,7 +15,7 @@ module "sg" {
     },
     {
       from_port   = 1200
-      to_port     = 8080
+      to_port     = 1200
       protocol    = "tcp"
       description = "netflix port"
       cidr_blocks = "0.0.0.0/0"

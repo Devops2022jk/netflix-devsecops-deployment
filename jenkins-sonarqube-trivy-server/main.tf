@@ -14,6 +14,20 @@ module "sg" {
       cidr_blocks = "0.0.0.0/0"
     },
     {
+      from_port   = 1200
+      to_port     = 8080
+      protocol    = "tcp"
+      description = "netflix port"
+      cidr_blocks = "0.0.0.0/0"
+    },
+    {
+      from_port   = 96
+      to_port     = 96
+      protocol    = "tcp"
+      description = "Docker container port"
+      cidr_blocks = "0.0.0.0/0"
+    },
+    {
       from_port   = 443
       to_port     = 443
       protocol    = "tcp"
